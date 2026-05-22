@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Flipper</title>
+
+<style>
+
+/* =========================
+   BASE
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.card {
+  max-width: 900px;
+  margin: auto;
+  background: #111827;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.plan {
+  background: #111827;
+  width: 280px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.plan.pro {
+  border: 2px solid #38bdf8;
+  transform: scale(1.05);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  background: linear-gradient(90deg,#00d632,#00ff88);
+  color: black;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.review-grid,
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.box {
+  background: #111827;
+  width: 280px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="scroll-animate">
+  <h1 style="font-size:56px; margin-bottom:10px;">Web Flipper</h1>
+
+  <p style="color:#94a3b8; font-size:18px;">
+    Website design • Website flipping • Business upgrades
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section class="scroll-animate">
+
+  <div class="card">
+
+    <h2 style="font-size:36px;">About Me</h2>
+
+    <p style="color:#cbd5e1; line-height:1.9; font-size:17px;">
+      My name is <strong>Rj Stagen</strong>, and I am an 18-year-old entrepreneur who recently finished boarding school and is focused on building a better future.
+      I grew up facing real challenges, and I use that experience as motivation to grow and succeed.
+      <br><br>
+      Today, I specialize in building and flipping websites for businesses and creators—helping them improve their online presence, attract customers, and look more professional online.
+    </p>
+
+    <div style="margin-top:25px; padding:14px; background:#0b1220; border-radius:12px; color:#94a3b8;">
+      ⚡ Focused on clean design, fast delivery, and real results.
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRICING -->
+<section class="scroll-animate">
+
+  <h2 style="font-size:40px;">Pricing Packages</h2>
+
+  <div class="pricing-grid">
+
+    <div class="plan">
+      <h3>Basic</h3>
+      <h2>$99</h2>
+
+      <p style="color:#cbd5e1; line-height:2;">
+        ✔ Simple redesign<br>
+        ✔ Mobile optimization<br>
+        ✔ 2-day delivery
+      </p>
+
+      <a href="https://cash.app/$RjStagen3" class="button">
+        Choose Basic
+      </a>
+    </div>
+
+    <div class="plan pro">
+      <h3 style="color:#38bdf8;">Pro 🔥</h3>
+      <h2>$199</h2>
+
+      <p style="color:#cbd5e1; line-height:2;">
+        ✔ Full redesign<br>
+        ✔ SEO setup<br>
+        ✔ Modern UI upgrade
+      </p>
+
+      <a href="https://cash.app/$RjStagen3" class="button">
+        Choose Pro
+      </a>
+    </div>
+
+    <div class="plan">
+      <h3>Premium</h3>
+      <h2>$399</h2>
+
+      <p style="color:#cbd5e1; line-height:2;">
+        ✔ Full custom website<br>
+        ✔ Branding improvements<br>
+        ✔ Priority support
+      </p>
+
+      <a href="https://cash.app/$RjStagen3" class="button">
+        Choose Premium
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REVIEWS -->
+<section class="scroll-animate">
+
+  <h2 style="font-size:40px;">5-Star Reviews</h2>
+
+  <div class="review-grid">
+
+    <div class="box">
+      ⭐⭐⭐⭐⭐
+      <p style="color:#cbd5e1;">
+        "Super clean redesign and fast service."
+      </p>
+    </div>
+
+    <div class="box">
+      ⭐⭐⭐⭐⭐
+      <p style="color:#cbd5e1;">
+        "My business site looks way more professional now."
+      </p>
+    </div>
+
+    <div class="box">
+      ⭐⭐⭐⭐⭐
+      <p style="color:#cbd5e1;">
+        "Easy process and great communication."
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section class="scroll-animate">
+
+  <h2 style="font-size:40px;">Portfolio</h2>
+
+  <div class="portfolio-grid">
+
+    <div class="box">
+      <h3>Business Website Revamp</h3>
+
+      <p style="color:#94a3b8;">BEFORE</p>
+      <p style="color:#cbd5e1;">
+        Outdated design and poor mobile layout.
+      </p>
+
+      <p style="color:#94a3b8;">AFTER</p>
+      <p style="color:#38bdf8;">
+        Modern responsive redesign with cleaner branding.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Landing Page Upgrade</h3>
+
+      <p style="color:#94a3b8;">BEFORE</p>
+      <p style="color:#cbd5e1;">
+        Basic structure with no call-to-actions.
+      </p>
+
+      <p style="color:#94a3b8;">AFTER</p>
+      <p style="color:#38bdf8;">
+        High-converting landing page with modern layout.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="scroll-animate">
+
+  <div class="card">
+
+    <h2>Contact Me</h2>
+
+    <p style="line-height:2; font-size:18px;">
+      📧 rj.stagen@icloud.com<br>
+      📱 (262) 426-1408<br>
+      💰 $RjStagen3
+    </p>
+
+    <a href="https://cash.app/$RjStagen3" class="button">
+      💳 Pay Now
+    </a>
+
+  </div>
+
+</section>
+
+<!-- SCROLL ANIMATION -->
+<script>
+const elements = document.querySelectorAll(".scroll-animate");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
